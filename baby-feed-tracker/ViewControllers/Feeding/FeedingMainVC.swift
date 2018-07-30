@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class FirstViewController: UIViewController {
+class FeedMainVC: UIViewController {
 
     private var fetchedRC: NSFetchedResultsController<Feed>!
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate

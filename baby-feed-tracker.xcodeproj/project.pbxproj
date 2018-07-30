@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F2DD3926210F4403002EFFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3925210F4403002EFFFC /* AppDelegate.swift */; };
-		F2DD3928210F4403002EFFFC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3927210F4403002EFFFC /* FirstViewController.swift */; };
+		F2DD3928210F4403002EFFFC /* FeedingMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3927210F4403002EFFFC /* FeedingMainVC.swift */; };
 		F2DD392A210F4403002EFFFC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3929210F4403002EFFFC /* SecondViewController.swift */; };
 		F2DD392D210F4403002EFFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DD392B210F4403002EFFFC /* Main.storyboard */; };
 		F2DD392F210F4404002EFFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DD392E210F4404002EFFFC /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		F2DD3922210F4403002EFFFC /* baby-feed-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "baby-feed-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DD3925210F4403002EFFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2DD3927210F4403002EFFFC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F2DD3927210F4403002EFFFC /* FeedingMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingMainVC.swift; sourceTree = "<group>"; };
 		F2DD3929210F4403002EFFFC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F2DD392C210F4403002EFFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2DD392E210F4404002EFFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F24F15D9210FB4D000592816 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F24F15DA210FBCBE00592816 /* Feeding */,
+				F2DD3929210F4403002EFFFC /* SecondViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F24F15DA210FBCBE00592816 /* Feeding */ = {
+			isa = PBXGroup;
+			children = (
+				F2DD3927210F4403002EFFFC /* FeedingMainVC.swift */,
+			);
+			path = Feeding;
+			sourceTree = "<group>";
+		};
 		F2DD3919210F4403002EFFFC = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +80,8 @@
 		F2DD3924210F4403002EFFFC /* baby-feed-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				F24F15D9210FB4D000592816 /* ViewControllers */,
 				F2DD3925210F4403002EFFFC /* AppDelegate.swift */,
-				F2DD3927210F4403002EFFFC /* FirstViewController.swift */,
-				F2DD3929210F4403002EFFFC /* SecondViewController.swift */,
 				F2DD392B210F4403002EFFFC /* Main.storyboard */,
 				F2DD392E210F4404002EFFFC /* Assets.xcassets */,
 				F2DD3930210F4404002EFFFC /* LaunchScreen.storyboard */,
@@ -159,7 +175,7 @@
 				F2DD394C210F4553002EFFFC /* Feed+CoreDataClass.swift in Sources */,
 				F2DD392A210F4403002EFFFC /* SecondViewController.swift in Sources */,
 				F2DD3926210F4403002EFFFC /* AppDelegate.swift in Sources */,
-				F2DD3928210F4403002EFFFC /* FirstViewController.swift in Sources */,
+				F2DD3928210F4403002EFFFC /* FeedingMainVC.swift in Sources */,
 				F2DD394D210F4553002EFFFC /* Feed+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
