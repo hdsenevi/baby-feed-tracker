@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F24F15DC210FBF7800592816 /* FeedDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24F15DB210FBF7800592816 /* FeedDetailsVC.swift */; };
 		F2DD3926210F4403002EFFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3925210F4403002EFFFC /* AppDelegate.swift */; };
 		F2DD3928210F4403002EFFFC /* FeedingMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3927210F4403002EFFFC /* FeedingMainVC.swift */; };
 		F2DD392A210F4403002EFFFC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3929210F4403002EFFFC /* SecondViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F24F15DB210FBF7800592816 /* FeedDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsVC.swift; sourceTree = "<group>"; };
 		F2DD3922210F4403002EFFFC /* baby-feed-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "baby-feed-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DD3925210F4403002EFFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2DD3927210F4403002EFFFC /* FeedingMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingMainVC.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				F2DD3927210F4403002EFFFC /* FeedingMainVC.swift */,
+				F24F15DB210FBF7800592816 /* FeedDetailsVC.swift */,
 			);
 			path = Feeding;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24F15DC210FBF7800592816 /* FeedDetailsVC.swift in Sources */,
 				F2DD393D210F444B002EFFFC /* FeedTrackerDb.xcdatamodeld in Sources */,
 				F2DD394C210F4553002EFFFC /* Feed+CoreDataClass.swift in Sources */,
 				F2DD392A210F4403002EFFFC /* SecondViewController.swift in Sources */,
