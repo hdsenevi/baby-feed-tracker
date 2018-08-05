@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F24F15DC210FBF7800592816 /* FeedDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24F15DB210FBF7800592816 /* FeedDetailsVC.swift */; };
+		F2C7B03321169A8D0067C2CB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7B03221169A8D0067C2CB /* FeedCell.swift */; };
 		F2DD3926210F4403002EFFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3925210F4403002EFFFC /* AppDelegate.swift */; };
-		F2DD3928210F4403002EFFFC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3927210F4403002EFFFC /* FirstViewController.swift */; };
+		F2DD3928210F4403002EFFFC /* FeedListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3927210F4403002EFFFC /* FeedListVC.swift */; };
 		F2DD392A210F4403002EFFFC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3929210F4403002EFFFC /* SecondViewController.swift */; };
 		F2DD392D210F4403002EFFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DD392B210F4403002EFFFC /* Main.storyboard */; };
 		F2DD392F210F4404002EFFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DD392E210F4404002EFFFC /* Assets.xcassets */; };
 		F2DD3932210F4404002EFFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DD3930210F4404002EFFFC /* LaunchScreen.storyboard */; };
+		F2DD393D210F444B002EFFFC /* FeedTrackerDb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2DD393B210F444B002EFFFC /* FeedTrackerDb.xcdatamodeld */; };
+		F2DD394C210F4553002EFFFC /* Feed+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD394A210F4553002EFFFC /* Feed+CoreDataClass.swift */; };
+		F2DD394D210F4553002EFFFC /* Feed+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD394B210F4553002EFFFC /* Feed+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F24F15DB210FBF7800592816 /* FeedDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsVC.swift; sourceTree = "<group>"; };
+		F2C7B03221169A8D0067C2CB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		F2DD3922210F4403002EFFFC /* baby-feed-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "baby-feed-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DD3925210F4403002EFFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2DD3927210F4403002EFFFC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F2DD3927210F4403002EFFFC /* FeedListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListVC.swift; sourceTree = "<group>"; };
 		F2DD3929210F4403002EFFFC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F2DD392C210F4403002EFFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2DD392E210F4404002EFFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2DD3931210F4404002EFFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2DD3933210F4404002EFFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2DD393C210F444B002EFFFC /* FeedTrackerDb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedTrackerDb.xcdatamodel; sourceTree = "<group>"; };
+		F2DD394A210F4553002EFFFC /* Feed+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F2DD394B210F4553002EFFFC /* Feed+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +47,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F24F15D9210FB4D000592816 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2DD3929210F4403002EFFFC /* SecondViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F24F15DA210FBCBE00592816 /* FeedList */ = {
+			isa = PBXGroup;
+			children = (
+				F2DD3927210F4403002EFFFC /* FeedListVC.swift */,
+				F2C7B03221169A8D0067C2CB /* FeedCell.swift */,
+			);
+			path = FeedList;
+			sourceTree = "<group>";
+		};
+		F2C7B03021169A140067C2CB /* FeedDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F24F15DB210FBF7800592816 /* FeedDetailsVC.swift */,
+			);
+			path = FeedDetails;
+			sourceTree = "<group>";
+		};
+		F2C7B03121169A260067C2CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2DD392B210F4403002EFFFC /* Main.storyboard */,
+				F2DD392E210F4404002EFFFC /* Assets.xcassets */,
+				F2DD3930210F4404002EFFFC /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F2DD3919210F4403002EFFFC = {
 			isa = PBXGroup;
 			children = (
+				F2DD393A210F4437002EFFFC /* CoreData */,
 				F2DD3924210F4403002EFFFC /* baby-feed-tracker */,
 				F2DD3923210F4403002EFFFC /* Products */,
 			);
@@ -56,15 +102,24 @@
 		F2DD3924210F4403002EFFFC /* baby-feed-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				F24F15DA210FBCBE00592816 /* FeedList */,
+				F2C7B03021169A140067C2CB /* FeedDetails */,
+				F24F15D9210FB4D000592816 /* ViewControllers */,
+				F2C7B03121169A260067C2CB /* Resources */,
 				F2DD3925210F4403002EFFFC /* AppDelegate.swift */,
-				F2DD3927210F4403002EFFFC /* FirstViewController.swift */,
-				F2DD3929210F4403002EFFFC /* SecondViewController.swift */,
-				F2DD392B210F4403002EFFFC /* Main.storyboard */,
-				F2DD392E210F4404002EFFFC /* Assets.xcassets */,
-				F2DD3930210F4404002EFFFC /* LaunchScreen.storyboard */,
 				F2DD3933210F4404002EFFFC /* Info.plist */,
 			);
 			path = "baby-feed-tracker";
+			sourceTree = "<group>";
+		};
+		F2DD393A210F4437002EFFFC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F2DD394A210F4553002EFFFC /* Feed+CoreDataClass.swift */,
+				F2DD394B210F4553002EFFFC /* Feed+CoreDataProperties.swift */,
+				F2DD393B210F444B002EFFFC /* FeedTrackerDb.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24F15DC210FBF7800592816 /* FeedDetailsVC.swift in Sources */,
+				F2DD393D210F444B002EFFFC /* FeedTrackerDb.xcdatamodeld in Sources */,
+				F2DD394C210F4553002EFFFC /* Feed+CoreDataClass.swift in Sources */,
 				F2DD392A210F4403002EFFFC /* SecondViewController.swift in Sources */,
 				F2DD3926210F4403002EFFFC /* AppDelegate.swift in Sources */,
-				F2DD3928210F4403002EFFFC /* FirstViewController.swift in Sources */,
+				F2C7B03321169A8D0067C2CB /* FeedCell.swift in Sources */,
+				F2DD3928210F4403002EFFFC /* FeedListVC.swift in Sources */,
+				F2DD394D210F4553002EFFFC /* Feed+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +398,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F2DD393B210F444B002EFFFC /* FeedTrackerDb.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F2DD393C210F444B002EFFFC /* FeedTrackerDb.xcdatamodel */,
+			);
+			currentVersion = F2DD393C210F444B002EFFFC /* FeedTrackerDb.xcdatamodel */;
+			path = FeedTrackerDb.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F2DD391A210F4403002EFFFC /* Project object */;
 }
