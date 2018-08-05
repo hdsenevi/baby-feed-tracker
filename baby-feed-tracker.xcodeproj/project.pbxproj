@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F24F15DC210FBF7800592816 /* FeedDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24F15DB210FBF7800592816 /* FeedDetailsVC.swift */; };
+		F2C7B03321169A8D0067C2CB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7B03221169A8D0067C2CB /* FeedCell.swift */; };
 		F2DD3926210F4403002EFFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3925210F4403002EFFFC /* AppDelegate.swift */; };
-		F2DD3928210F4403002EFFFC /* FeedingMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3927210F4403002EFFFC /* FeedingMainVC.swift */; };
+		F2DD3928210F4403002EFFFC /* FeedListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3927210F4403002EFFFC /* FeedListVC.swift */; };
 		F2DD392A210F4403002EFFFC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD3929210F4403002EFFFC /* SecondViewController.swift */; };
 		F2DD392D210F4403002EFFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DD392B210F4403002EFFFC /* Main.storyboard */; };
 		F2DD392F210F4404002EFFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DD392E210F4404002EFFFC /* Assets.xcassets */; };
@@ -21,9 +22,10 @@
 
 /* Begin PBXFileReference section */
 		F24F15DB210FBF7800592816 /* FeedDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsVC.swift; sourceTree = "<group>"; };
+		F2C7B03221169A8D0067C2CB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		F2DD3922210F4403002EFFFC /* baby-feed-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "baby-feed-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DD3925210F4403002EFFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2DD3927210F4403002EFFFC /* FeedingMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingMainVC.swift; sourceTree = "<group>"; };
+		F2DD3927210F4403002EFFFC /* FeedListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListVC.swift; sourceTree = "<group>"; };
 		F2DD3929210F4403002EFFFC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F2DD392C210F4403002EFFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2DD392E210F4404002EFFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,19 +50,36 @@
 		F24F15D9210FB4D000592816 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F24F15DA210FBCBE00592816 /* Feeding */,
 				F2DD3929210F4403002EFFFC /* SecondViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		F24F15DA210FBCBE00592816 /* Feeding */ = {
+		F24F15DA210FBCBE00592816 /* FeedList */ = {
 			isa = PBXGroup;
 			children = (
-				F2DD3927210F4403002EFFFC /* FeedingMainVC.swift */,
+				F2DD3927210F4403002EFFFC /* FeedListVC.swift */,
+				F2C7B03221169A8D0067C2CB /* FeedCell.swift */,
+			);
+			path = FeedList;
+			sourceTree = "<group>";
+		};
+		F2C7B03021169A140067C2CB /* FeedDetails */ = {
+			isa = PBXGroup;
+			children = (
 				F24F15DB210FBF7800592816 /* FeedDetailsVC.swift */,
 			);
-			path = Feeding;
+			path = FeedDetails;
+			sourceTree = "<group>";
+		};
+		F2C7B03121169A260067C2CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2DD392B210F4403002EFFFC /* Main.storyboard */,
+				F2DD392E210F4404002EFFFC /* Assets.xcassets */,
+				F2DD3930210F4404002EFFFC /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F2DD3919210F4403002EFFFC = {
@@ -83,11 +102,11 @@
 		F2DD3924210F4403002EFFFC /* baby-feed-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				F24F15DA210FBCBE00592816 /* FeedList */,
+				F2C7B03021169A140067C2CB /* FeedDetails */,
 				F24F15D9210FB4D000592816 /* ViewControllers */,
+				F2C7B03121169A260067C2CB /* Resources */,
 				F2DD3925210F4403002EFFFC /* AppDelegate.swift */,
-				F2DD392B210F4403002EFFFC /* Main.storyboard */,
-				F2DD392E210F4404002EFFFC /* Assets.xcassets */,
-				F2DD3930210F4404002EFFFC /* LaunchScreen.storyboard */,
 				F2DD3933210F4404002EFFFC /* Info.plist */,
 			);
 			path = "baby-feed-tracker";
@@ -179,7 +198,8 @@
 				F2DD394C210F4553002EFFFC /* Feed+CoreDataClass.swift in Sources */,
 				F2DD392A210F4403002EFFFC /* SecondViewController.swift in Sources */,
 				F2DD3926210F4403002EFFFC /* AppDelegate.swift in Sources */,
-				F2DD3928210F4403002EFFFC /* FeedingMainVC.swift in Sources */,
+				F2C7B03321169A8D0067C2CB /* FeedCell.swift in Sources */,
+				F2DD3928210F4403002EFFFC /* FeedListVC.swift in Sources */,
 				F2DD394D210F4553002EFFFC /* Feed+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
